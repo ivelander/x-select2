@@ -1,0 +1,28 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../lib/jquery.html">
+
+<script src="../bower_components/select2/select2.js"></script>
+<link rel="stylesheet" href="../bower_components/select2/select2.css" >
+
+<polymer-element name="x-select2">
+
+    <template>
+
+        <select id="e1">
+            <option value="AL">Alabama</option>
+            <option value="WY">Wyoming</option>
+        </select>
+
+    </template>
+
+    <script>
+
+        Polymer('x-select2', {
+            ready: function(){
+                $(this.$.e1).select2();
+            }
+        });
+
+    </script>
+
+</polymer-element>
